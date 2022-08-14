@@ -1,15 +1,124 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Ejercicio numero 2 del trabajo practico de Dom y Bom">
-    <meta name="keywords" content="Bom , Dom , Javascript">
-    <meta name="author" content="Gonzalo Gallardo">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Ejercicio numero 2 del trabajo practico de Dom y Bom"
+    />
+    <meta name="keywords" content="Bom , Dom , Javascript" />
+    <meta name="author" content="Gonzalo Gallardo" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
     <title>Ejercicio 2</title>
-</head>
-<body>
-    
-</body>
+  </head>
+  <body>
+    <header></header>
+    <main class="colorMain container">
+      <h1 class="text-center">Tabla de generaciones</h1>
+      <hr />
+      <section>
+        <form name="formulario" id="formulario">
+            <div class="mb-4">
+                <label class="form-label letraform" for="nombre"> Nombre </label>
+                <input
+                  class="form-control"
+                  type="text"
+                  id="inputNombre"
+                  placeholder="Ej. Juan"
+                  maxlength="70"
+                  minlength="3"
+                  required
+                />
+              </div>
+              <div class="mb-4">
+                <label class="form-label letraform" for="edad">
+                  Edad
+                </label>
+                <input
+                  class="form-control"
+                  type="number"
+                  id="inputEdad"
+                  placeholder="Ej:20"
+                  maxlength="70"
+                  minlength="3"
+                  required
+                />
+              </div>
+              <div class="mb-4">
+                <label class="form-label letraform" for="dni"> DNI </label>
+                <input
+                  class="form-control"
+                  type="number"
+                  id="inputDni"
+                  placeholder=" Ej:23.333.444"
+                  maxlength="100"
+                  minlength="8"
+                  required
+                />
+              </div>
+              <div class="mb-4">
+                <label class="form-label letraform" for="dni"> Sexo</label>
+                <input
+                  class="form-control"
+                  type="text"
+                  id="inputSexo"
+                  placeholder=" Ej:masculino"
+                  maxlength="100"
+                  minlength="8"
+                  required
+                />
+              </div>
+              <div class="mb-4">
+                <label class="form-label letraform" for="peso">
+                  peso
+                </label>
+                <input
+                  class="form-control"
+                  type="number"
+                  id="inputPeso"
+                  placeholder="Ingresar el peso de la persona"
+                  maxlength="8"
+                  minlength="8"
+                  required
+                />
+              </div>
+              <div class="mb-2">
+                <label class="form-label letraform" for="Altura">
+                  Altura
+                </label>
+                <input
+                  class="form-control"
+                  type="number"
+                  id="inputAltura"
+                  placeholder="Ingresa la altura en cm"
+                  maxlength="8"
+                  minlength="8"
+                  required
+                />
+              </div>
+              <div class="mb-2">
+                <label class="form-label letraform" for="Altura">
+                  Año de nacimiento
+                </label>
+                <input
+                  class="form-control"
+                  type="number"
+                  id="inputAñoNacimiento"
+                  placeholder="Ej:1990"
+                  maxlength="8"
+                  minlength="8"
+                  required
+                />
+              </div>
+              <button class="btn btn-success" type="submit" onclick="imprimirPersona()">Crear perfil</button>
+        </form>
+      </section>
+    </main>
+    <footer></footer>
+    <script src="/js/bootstrap.bundle.min.js"></script>
+    <script src="/js/app.js"></script>
+  </body>
 </html>
